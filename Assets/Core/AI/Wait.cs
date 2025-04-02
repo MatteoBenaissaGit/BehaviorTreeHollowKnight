@@ -26,6 +26,5 @@ namespace Core.AI
             }
             return TreeNodeState.Success;
         }
-
     }
 }

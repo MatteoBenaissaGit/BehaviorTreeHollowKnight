@@ -1,5 +1,4 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace Core.AI
@@ -9,10 +8,11 @@ namespace Core.AI
     /// </summary>
     public class Repeater : TreeNode
     {
-        public int RepeatCount = -1;
+        public int RepeatCount { get; set; } = -1;
 
         private TreeNode Node => Children[0]; 
         private bool RepeatForever => RepeatCount == -1;
+        
         private int _currentRepeatCount = 0;
 
         public Repeater()

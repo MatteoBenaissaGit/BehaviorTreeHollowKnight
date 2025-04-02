@@ -41,7 +41,5 @@ namespace Core.AI
         {
             _currentChildIndex = 0;
         }
-
-
     }
 }

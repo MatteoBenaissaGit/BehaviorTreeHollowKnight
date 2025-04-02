@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Core.AI
 {
     /// <summary>
-    /// This class represents a node in the behavior tree
+    /// This class represents a node in the <see cref="BehaviorTree"/>
     /// </summary>
     public class TreeNode
     {
@@ -15,7 +15,6 @@ namespace Core.AI
         {
             Children.Add(node);
         }
-
 
         public virtual TreeNodeState Update(BehaviorTree tree, GameObject owner)
         {
@@ -48,5 +47,4 @@ namespace Core.AI
         Failed,
         Running
     }
-
 }

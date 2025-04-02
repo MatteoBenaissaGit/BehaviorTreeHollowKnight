@@ -7,8 +7,8 @@ namespace Core.AI
     /// </summary>
     public class SetBlackboard : TreeNode
     {
-        public string ValueName;
-        public float Value;
+        public string ValueName { get; set; }
+        public float Value { get; set; }
 
         public override TreeNodeState Update(BehaviorTree tree, GameObject owner)
         {

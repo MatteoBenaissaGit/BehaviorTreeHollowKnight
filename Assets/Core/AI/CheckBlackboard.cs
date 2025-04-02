@@ -7,8 +7,8 @@ namespace Core.AI
     /// </summary>
     public class CheckBlackboard : TreeNode
     {
-        public int Value ;
-        public string Name;
+        public int Value { get; set; }
+        public string Name { get; set; }
 
         public override TreeNodeState Update(BehaviorTree tree, GameObject owner)
         {
@@ -16,12 +16,8 @@ namespace Core.AI
             {
                 return TreeNodeState.Success;
             }
-            else
-            {
-                return TreeNodeState.Failed;
-            }
+            
+            return TreeNodeState.Failed;
         }
-
-
     }
 }
